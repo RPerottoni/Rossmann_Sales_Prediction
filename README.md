@@ -44,7 +44,7 @@ The datasets were about 1.115 stores, and the descripton about some filds can be
 
 The solution follows the CRISP-DS method (Cross Industry Process - Data Science). Which is a cyclic method of development, and at the end of the first cycle, the team will have a first version end to end of this solution, achieve good result faster, mapping all the possible problems.
 
-<img src="https://github.com/RPerottoni/Rossmann_Sales_Prediction/blob/main/img/crispds_one.png" width=70% height=35%/>
+<img src="https://github.com/RPerottoni/Rossmann_Sales_Prediction/blob/main/img/crispds_one.png" width=70% height=50%/>
 
 
 ## Business Assumptions
