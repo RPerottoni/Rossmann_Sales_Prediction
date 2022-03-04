@@ -12,8 +12,9 @@ Rossmann is one of the largest drug store chains in Europe with around 56,200 em
 
 ## Business Questions
 
-Rossmann store managers are tasked with predicting their daily sales for up to six weeks in advance. And its demands were passed over to a DataSciente team. To understand better the problem, and why every manager was asking the same thing, the DataScience Team talked with some managers and they realised that was a CFO demands.
-A meeting with the CFO was made, and was possible to indentify the objective of this project, which is to carry out the sales forecast, helping the CFO to set a investment for each store, to restore the building and make some improvements.
+Rossmann store managers are tasked with predicting their daily sales for up to six weeks in advance. And its demands were passed over to a DataSciente team. 
+To understand better the problem and why every manager was asking the same thing, the DataScience Team talked with some managers and they realised that was a CFO demands.
+A meeting with the CFO was made, and was possible to indentify the objective of this project, which is to carry out the sales forecast for up to the next six weeks and the result should be accessed by mobile, helping the CFO to set a investment for each store, to restore the building and make some improvements.
 
 ## Datas
 
@@ -40,6 +41,11 @@ The datasets were about 1.115 stores, and the descripton about some filds can be
 |StoreType | differentiates between 4 different store models: a, b, c, d|<br>
 
 ## Solution Strategy
+
+The solution follows the CRISP-DS method (Cross Industry Process - Data Science). Which is a cyclic method of development, and at the end of the first cycle, the team will have a first version end to end of this solution, achieve good result faster, mapping all the possible problems.
+
+<img src="https://github.com/RPerottoni/Rossmann_Sales_Prediction/blob/main/img/crispds_one.png" width=100% height=40%/>
+
 
 ## Business Assumptions
 
