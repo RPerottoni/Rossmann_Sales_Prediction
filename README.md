@@ -48,14 +48,44 @@ The solution follows the CRISP-DS method (Cross Industry Process - Data Science)
 
 <img src="https://github.com/RPerottoni/Rossmann_Sales_Prediction/blob/main/img/crispds_one.png" width=100% height=50%/>
 
+**Descriptive Analisys:** A statisc overview about each column from the datasets.
 
+**Feature Engineering:** Development of a hypothesis map that supports the variables creation and a hypothesis validation.
 
+**Data Cleaning:** Remove, filtering and replace missing information: stores closed and stores that the ammount of sells was equal a zero.
 
+**EDA - Exploratory Data Analisys:** Univariate, bivariate and multivariated analysis, seeking the variables that could change the response variable. This analysis enable to identify variables that could be relevant for training the machine learning model.
 
+**Data Preparation:** Normalization, rescaling and transformation.
 
+**Feature Selection** Dataset division for the boruta algorithm as a variable selector.
 
-## Results
+**Machine Learning Models:** The following ML models were used to training: Average Model, Linear Regression Model, Linear Regression Model - Lasso, Randon Forest Model and XGBoost Model.
 
-## Conclusion
+A comparions about the MAPE, MAE and RMSE was done and the XGBoost Model was selected because offer a low operation costs.
 
-## Next Steps
+**Hyperparameters Fine Tuning:** The technique **Random Search** was used to fine tuning the parameters for XGboost.
+
+**Performance:** The model performance was checked and some scenarions were created. Like, the scenario that the model predict and the scenarios the we calculated considering the model error. 
+
+**Deployment:**  Cloud Heroku and Telegram Bot (API)
+
+## Tools and Technology
+- Python 3.10
+- Visual Studio Code 1.63
+- Jupyter Notebook
+- Heroku Cloud
+- Flask 2.0.2
+- Telegram
+
+## How to Use
+The user will recive a invite for a chat on Telegram app, and what the user needs to do is send the sorte ID on this chat, the BOT will read and will answer with the prediction for that store.
+
+## Lessons Learned
+The EDA provides relevant insights for the business and allow to have a better uderstanding about the business.
+The ML Model should be selected considering the operation costs, not only the errors.
+
+## Future Improvements
+- Creation of specific models from the stores were the performance was lower.
+- Improve the Telegram BOT, add graphs into the answers.
+- Adição de funcionalidades ao bot do Telegram, por exemplo: exibição de gráficos.
