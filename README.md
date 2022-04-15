@@ -18,6 +18,8 @@ A meeting with the CFO was made, and was possible to indentify the objective of 
 
 ## Datas
 
+The datasets were from a [Kaggle Competition](https://www.kaggle.com/c/rossmann-store-sales) ![kaggle](https://img.shields.io/badge/Kaggle-20BEFF?style=for-the-badge&logo=Kaggle&logoColor=white)
+
 The datasets were about 1.115 stores, and the descripton about some filds can be checked bellow. 
 
 |Variable | Definition|
