@@ -47,7 +47,10 @@ The solution follows the CRISP-DS method (Cross Industry Process - Data Science)
 <img src="https://github.com/RPerottoni/Rossmann_Sales_Prediction/blob/main/img/crispds_one.png" width=100% height=50%/>
 
 
-## Business Assumptions
+
+
+
+
 
 ## Results
 
