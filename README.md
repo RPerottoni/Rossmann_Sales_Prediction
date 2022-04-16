@@ -79,7 +79,7 @@ A comparions about the MAPE, MAE and RMSE was done and the XGBoost Model was sel
 - Telegram
 
 ## How to Use
-The user will recive a invite for a chat on Telegram app, and what the user needs to do is send the sorte ID on this chat, the BOT will read and will answer with the prediction for that store.
+The user will recive a invite for a chat on Telegram app, and what the user needs to do is send the store ID on this chat, the BOT will read and will answer with the prediction for that store.
 
 ## Lessons Learned
 The EDA provides relevant insights for the business and allow to have a better uderstanding about the business.
