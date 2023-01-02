@@ -2,7 +2,7 @@ import pickle
 import os
 import pandas            as pd
 from   flask             import Flask, Response, request
-from   rossmann_prediction.rossmann.rossmann import Rossmann
+from   rossmann.rossmann import Rossmann
 
 
 # logading model
@@ -12,7 +12,7 @@ model = pickle.load( open( 'rossmann_prediction/model/model_rossmann.pkl', 'rb' 
 # initialize API
 app = Flask( __name__ )
 
-@app.route( 'rossmann_prediction/rossmann/predict', methods=['POST'] )
+@app.route( 'rossmann/predict', methods=['POST'] )
 
 def rossmann_predict():
     test_json = request.get_json()
