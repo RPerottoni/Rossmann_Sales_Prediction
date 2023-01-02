@@ -2,7 +2,7 @@ import pickle
 import os
 import pandas            as pd
 from   flask             import Flask, Response, request
-from   rossmann.rossmann import Rossmann
+from   rossmann_prediction.rossmann.rossmann import Rossmann
 
 
 # logading model
