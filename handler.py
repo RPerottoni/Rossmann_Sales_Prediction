@@ -1,18 +1,18 @@
 import pickle
 import os
-import pandas as pd
-from flask             import Flask, Response, request
-from rossmann.rossmann import Rossmann
+import pandas            as pd
+from   flask             import Flask, Response, request
+from   rossmann.rossmann import Rossmann
 
 
 # logading model
 
-model = pickle.load( open( 'model/model_rossmann.pkl', 'rb' ) )
+model = pickle.load( open( 'rossmann_prediction/model/model_rossmann.pkl', 'rb' ) )
 
 # initialize API
 app = Flask( __name__ )
 
-@app.route( '/rossmann/predict', methods=['POST'] )
+@app.route( 'rossmann_prediction/rossmann/predict', methods=['POST'] )
 
 def rossmann_predict():
     test_json = request.get_json()
