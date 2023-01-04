@@ -6,7 +6,7 @@ from rossmann.rossmann import Rossmann
 
 # logading model
 
-model = pickle.load( open( '/Users/ricadesk/Documents/ds_repos/ds_em_producao/model/model_rossmann.pkl', 'rb' ) )
+model = pickle.load( open( 'C:/Users/perot/Documents/ds_repos/projects/Rossmann_Sales_Prediction/rossmann_prediction/model/model_rossmann.pkl', 'rb' ) )
 
 # initialize API
 app = Flask( __name__ )
@@ -31,7 +31,7 @@ def rossmann_predict():
         df1 = pipeline.data_cleaning( test_raw )
         
         # feature engineering
-        df2 = pipeline.feature_engeneering( df1 )
+        df2 = pipeline.feature_engineering( df1 )
                 
         # data preparation
         df3 = pipeline.data_preparation( df2 )

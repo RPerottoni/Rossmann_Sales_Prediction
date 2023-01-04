@@ -7,9 +7,10 @@ import pandas   as pd
 import numpy    as np
 
 
+
 class Rossmann( object ):
     def __init__( self ):
-        self.home_path                     = 'C:/Users/perot/Documents/ds_repos/projects/Rossmann_Sales_Prediction/rossmann_prediction'
+        self.home_path                     = ''
         self.competition_time_month_scaler = pickle.load( open( self.home_path + '/parameters/competition_time_month_scaler.pkl', 'rb') )
         self.competition_distance_scaler   = pickle.load( open( self.home_path + '/parameters/competition_distance_scaler.pkl', 'rb') )
         self.promo_time_week_scaler        = pickle.load( open( self.home_path + '/parameters/promo_time_week_scaler.pkl', 'rb') )
@@ -83,7 +84,7 @@ class Rossmann( object ):
         df2['day'] = df2['date'].dt.day
 
         # week of year
-        df2['week_of_year'] = df2['date'].dt.isocalendar().week
+        df2['week_of_year'] = df2['date'].dt.weekofyear
 
         # year week
         df2['year_week'] = df2['date'].dt.strftime( '%Y-%W' )
@@ -120,7 +121,7 @@ class Rossmann( object ):
         df5['competition_distance'] = self.competition_distance_scaler.transform( df5[['competition_distance']].values )
 
         # Year
-        df5['year'] = self.year_scaler.fit_transform( df5[['year']].values )
+        df5['year'] = self.year_scaler.transform( df5[['year']].values )
 
         # competition time month
         df5['competition_time_month'] = self.competition_time_month_scaler.transform( df5[['competition_time_month']].values )

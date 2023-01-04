@@ -84,7 +84,7 @@ class Rossmann( object ):
         df2['day'] = df2['date'].dt.day
 
         # week of year
-        df2['week_of_year'] = df2['date'].dt.weekofyear
+        df2['week_of_year'] = df2['date'].dt.isocalendar().week
 
         # year week
         df2['year_week'] = df2['date'].dt.strftime( '%Y-%W' )
@@ -121,7 +121,7 @@ class Rossmann( object ):
         df5['competition_distance'] = self.competition_distance_scaler.transform( df5[['competition_distance']].values )
 
         # Year
-        df5['year'] = self.year_scaler.transform( df5[['year']].values )
+        df5['year'] = self.year_scaler.fit_transform( df5[['year']].values )
 
         # competition time month
         df5['competition_time_month'] = self.competition_time_month_scaler.transform( df5[['competition_time_month']].values )
