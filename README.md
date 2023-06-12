@@ -60,7 +60,7 @@ In this initial phase, the focus was on understanding the company's business and
 
 The data science team received a csv file containing the sales made for each store during one year period. And the solution was developed with these datas.
 
-## 2.3 Data Descriptive
+## 2.3 - Data Descriptive
 
 Also were done a data descriptive, focusing on identify and udenderstand if there are some outliers, missing values and data distribution for each feature, individually.
 The descriptive analysis can be accessed at the link bellow.
@@ -79,22 +79,22 @@ The 3 new dataset are presented below:
 
 **Test**: Also contains around 15% of the data and it's used to evaluate the model performance.
 
-## 2.3 - Data Cleaning
+## 2.4 - Data Cleaning
 
 As part of data cleaning the missing values were identified and filled following some assumptions that are described on the notebook.
 
-## 2.4 - Feature Engineering
+## 2.5 - Feature Engineering
 
 On this step, some features were created aiming to improve the model performance as well as gain some some business experience and insights.
 
 For this task, a technique called Mind Map Hypothesis was used, where new features were created based on hypotheses that were made and later validated.
 ![image](img/mindmaphypothesis.png)
 
-## 2.5 - Data Filtering
+## 2.6 - Data Filtering
 
 In this phase, we have implemented a filter on our dataset as it doesn't make sense to include data where, for example, the store was closed and no sales were made. Our objective is to predict sales ($$), and such data would be irrelevant.
 
-## 2.6 - Exploratory Data Analysis
+## 2.7 - Exploratory Data Analysis
 This phase has involved exploring the data, identifying patterns, and gaining insights into its characteristics. As part of the exploratory data analysis, were made the analysis below:
 
 - Univariate Analysis for variable response
@@ -125,7 +125,7 @@ The hypothesis made during the feature engineering process were validated on thi
 - Multivariate Analysis
 ![image](img/multivariate.png)
 
-## 2.7 - Data Modeling
+## 2.8 - Data Modeling
 In this phase were done data transformations to normalize the scale of features, help make the distribution more summetrical aiming to improve the ML model performance.
 
 Data transformations methods used:
@@ -137,18 +137,19 @@ Data transformations methods used:
 
 These transformation were applied on training and validation dataset.
 
-## 2.8 - Machine Learning Algorithms
+## 2.9 - Machine Learning Algorithms
 
-### 2.8.1 - Feature Selection
+### 2.9.1 - Feature Selection
 This phase started by doing a feture selection using Extra Trees Classifier, aiming to select only the most important features to be used to train the machine learning models.
 
 ![image](img/bestfeatures.png)
 
 Besides these features, during the hypothesis validation, some other important features were identified and considered for the application of Machine Learning.
 At the end, the features selected to training and perform with the ML algorithm were as per below:
+
 ![image](img/featurefinal.png)
 
-### 2.8.2 - Machine Learning Model training and performance
+### 2.9.2 - Machine Learning Model training and performance
 In this phase, some machine learning model were trained and their performance were calculated.
 
 ![image](img/mlmodel.png)
