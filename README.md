@@ -76,7 +76,7 @@ Before starting to work with the data, the dataset was separated into 3 new data
 | x_valid       | 152582         | 17             |
 | y_valid       | 152582         | -              |
 | x_test        | 129695         | 17             |
-| y_test        | 129695         | -              |                            |
+| y_test        | 129695         | -              |
 
 The 3 new dataset are presented below:
 
