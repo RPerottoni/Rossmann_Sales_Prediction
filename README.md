@@ -147,7 +147,7 @@ In this phase, some machine learning model were trained and their performance we
 Considering not only the ML results but also the resources such as processor, memory and performance, the XGBoost Regressor were selected to be the main algorithm to solve this business problem.
 The fine tuning technique was made aiming to find the best parameters for XGB Regressor and one last training were performed using the best parameters and the performance were calculated using the test dataset, to be more accurate and closer to the real performance for the algorithm. The XGBoost Regressor performance, after fine tuning process could be checked bellow.
 
-| ML Model                | MAE Cross_Validation    | MAPE Cross_Validation  | RMSE alidation     |
+| ML Model                | MAE Cross_Validation    | MAPE Cross_Validation  | RMSE Validation     |
 |:------------------------|:------------------------|:-----------------------|--------------------|
 | XGBoost Regressor       | 802.640                 | 0.125                  | 1125.825           |
 
