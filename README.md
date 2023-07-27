@@ -67,25 +67,6 @@ The descriptive analysis can be accessed at the link bellow.
 
 [Descriptive Analysis](notebooks/data_descriptive.html)
 
-Before starting to work with the data, the dataset was separated into 3 new datasets, which were used to ensure machine learning model training without overfitting.
-
-| Dataset       | Lines          | Columns        |
-|:--------------|:---------------|:---------------|
-| x_train       | 734932         | 17             |
-| y_train       | 734932         | -              |
-| x_valid       | 152582         | 17             |
-| y_valid       | 152582         | -              |
-| x_test        | 129695         | 17             |
-| y_test        | 129695         | -              |
-
-The 3 new dataset are presented below:
-
-**Train**: contains around 70% of data and it's used for machine learning algorithm training. 
-
-**Validation**: contains around 15% of data and it's used to set the best parameters.
-
-**Test**: Also contains around 15% of the data and it's used to evaluate the model performance.
-
 ## 2.4 - Data Cleaning
 
 As part of data cleaning the missing values were identified and filled following some assumptions that are described on the notebook.
@@ -152,22 +133,23 @@ This phase started by doing a feture selection using Extra Trees Classifier, aim
 Besides these features, during the hypothesis validation, some other important features were identified and considered for the application of Machine Learning.
 
 ### 2.9.2 - Machine Learning Model training and performance
-In this phase, some machine learning model were trained and their performance were calculated.
+In this phase, some machine learning model were trained and their performance were calculated by evaluation throguh cross validation technique.
 
 | ML Model                | MAE Cross_Validation    | MAPE Cross_Validation  | RMSE alidation     |
 |:------------------------|:------------------------|:-----------------------|--------------------|
-| Randon Forest Regressor | 837.11  +/- 164.8       | 0.13 +/- 0.03          | 1222.56 +/- 220.17 |
-| Lasso                   | 2022.15 +/- 75.78       | 0.33 +/- 0.03          | 2745.37 +/- 139.56 |
-| Linear Regression       | 2022.24 +/- 75.74       | 0.33 +/- 0.03          | 2745.43 +/- 139.49 |
-| XGBoost Regressor       | 2749.32 +/- 252.79      | 0.34 +/- 0.02          | 1222.56 +/- 220.17 |
+| Randon Forest Regressor | 938.85  +/- 230.31      | 0.14 +/- 0.03          | 1358.37 +/- 309.4  |
+| Average Model           | 1370.961                | 0.217                  | 1817.747           |
+| Lasso                   | 2152.12 +/- 224.22      | 0.34 +/- 0.03          | 2946.12 +/- 389.22 |
+| Linear Regression       | 2152.19 +/- 224.17      | 0.34 +/- 0.03          | 2946.14 +/- 389.12 |
+| XGBoost Regressor       | 2937.37 +/- 433.65      | 0.35 +/- 0.02          | 3739.77 +/- 529.9  |
 
 
 Considering not only the ML results but also the resources such as processor, memory and performance, the XGBoost Regressor were selected to be the main algorithm to solve this business problem.
-The fine tuning technique was made aiming to find the best parameters for XGB Regressor and one last training were performed using the best parameters and the performance were calculated using the test dataset, to be more accurate and closer to the real performance for the algorithm.
+The fine tuning technique was made aiming to find the best parameters for XGB Regressor and one last training were performed using the best parameters and the performance were calculated using the test dataset, to be more accurate and closer to the real performance for the algorithm. The XGBoost Regressor performance, after fine tuning process could be checked bellow.
 
 | ML Model                | MAE Cross_Validation    | MAPE Cross_Validation  | RMSE alidation     |
 |:------------------------|:------------------------|:-----------------------|--------------------|
-| XGBoost Regressor       | 1546.177                | 0.244                  | 2181.720           |
+| XGBoost Regressor       | 802.640                 | 0.125                  | 1125.825           |
 
 # 3 - Business Results
 
