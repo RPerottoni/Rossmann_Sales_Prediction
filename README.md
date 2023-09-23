@@ -12,10 +12,10 @@ This project was developed by using a CRISP-DM method, where the goal is do the 
 * [1. Business Scenario](#1-business-scenario)
 * [2. Solution Strategy](#2-solution-strategy)
 * [3. Data Filtering](#3-data-filtering)
-* [4. Hypothesis and Insights](#4-hyphotesis-and-insights)
+* [4. Hypothesis and Insights](#4-hypothesis-and-insights)
 * [5. Machine Learning Models](#5-machine-learning-models)
 * [6. Machine Learning Performance](#6-machine-learning-performance)
-* [7. Business Results](#7-business-results)
+* [7. Business Results](#7-business-outcome)
 * [8. Next Steps](#8-next-steps)
 * [9. Technologies](#9-technologies)
 
@@ -105,7 +105,7 @@ The datasets were about 1.115 stores, and the descripton about the variables can
 **3. Stores with longer-standing competitors should sell more.**
 >False Hypothesis: Stores with longer-standing competitors sell less.
 
-![image](img/hypo_three_1.png)
+![image](img/hypo_three_1.png)  
 ![image](img/hypo_three_2.png)
 
 **4. Stores with promotions active for a longer period of time should sell more.**
@@ -125,8 +125,6 @@ The datasets were about 1.115 stores, and the descripton about the variables can
 <p style="text-align: justify">This phase started by doing a feture selection using Extra Trees Classifier, aiming to select only the most important features to be used to train the machine learning models.
 
 Besides these features, during the hypothesis validation, some other important features were identified and considered for the application of Machine Learning.</p>
-
-## 5.2 - Machine Learning Model training and performance
 
 # 6. Machine Learning Performance
 
@@ -163,7 +161,7 @@ In evaluating the possibilities, we have calculated three different scenarios. T
 | Worst Scenario | €290.962.501,57   |
 | Best Scenario  | €292.757.637.21   | 
 
-For a better understanding of store performance, we can examine the chart below. It reveals that the majority of stores have an error rate below 20%, which is considered acceptable. However, there are some stores with error rates exceeding 0%, indicating a need for further attention during the second CRISP cycle.
+For a better understanding of store performance, we can examine the chart below. It reveals that the majority of stores have an error rate below 20%, which is considered acceptable. However, there are some stores with error rates exceeding 30%, indicating a need for further attention during the second CRISP cycle.
 
 ![image](img/error_analysis.png)
 
@@ -174,7 +172,8 @@ The user can simply send a text message to the Telegram bot, specifying the stor
 
 You can check the Telegram BOT working below.</p>
 
-![ezgif com-gif-maker (1)](img/gif.gif)
+<img src="img/gif.gif" width="300" height="700" />
+
 
 To access the Telegram bot, you can either use the provided link or scan the QR code below:
 
