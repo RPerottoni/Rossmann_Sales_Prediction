@@ -14,10 +14,9 @@ This project was developed by using a CRISP-DM method, where the goal is do the 
 * [3. Data Filtering](#3-data-filtering)
 * [4. Hypothesis and Insights](#4-hypothesis-and-insights)
 * [5. Machine Learning Models](#5-machine-learning-models)
-* [6. Machine Learning Performance](#6-machine-learning-performance)
-* [7. Business Results](#7-business-outcome)
-* [8. Next Steps](#8-next-steps)
-* [9. Technologies](#9-technologies)
+* [6. Business Results](#7-business-outcome)
+* [7. Next Steps](#8-next-steps)
+* [8. Technologies](#9-technologies)
 
 # 1. Business Scenario
 
@@ -121,13 +120,6 @@ The datasets were about 1.115 stores, and the descripton about the variables can
 
 # 5. Machine Learning Models
 
-## 5.1 - Feature Selection
-<p style="text-align: justify">This phase started by doing a feture selection using Extra Trees Classifier, aiming to select only the most important features to be used to train the machine learning models.
-
-Besides these features, during the hypothesis validation, some other important features were identified and considered for the application of Machine Learning.</p>
-
-# 6. Machine Learning Performance
-
 <p style="text-align: justify">In this phase, some machine learning model were trained and their performance were calculated by evaluation throguh cross validation technique.</p>
 
 | ML Model                | MAE Cross_Validation    | MAPE Cross_Validation  | RMSE alidation     |
@@ -138,6 +130,12 @@ Besides these features, during the hypothesis validation, some other important f
 | Linear Regression       | 2152.19 +/- 224.17      | 0.34 +/- 0.03          | 2946.14 +/- 389.12 |
 | XGBoost Regressor       | 2937.37 +/- 433.65      | 0.35 +/- 0.02          | 3739.77 +/- 529.9  |
 
+## 5.1 - Feature Selection
+<p style="text-align: justify">This phase started by doing a feture selection using Extra Trees Classifier, aiming to select only the most important features to be used to train the machine learning models.
+
+Besides these features, during the hypothesis validation, some other important features were identified and considered for the application of Machine Learning.</p>
+
+## 5.2 - Fine Tuning
 
 <p style="text-align: justify">Considering not only the ML results but also the resources such as processor, memory and performance, the XGBoost Regressor were selected to be the main algorithm to solve this business problem.
 The fine tuning technique was made aiming to find the best parameters for XGB Regressor and one last training were performed using the best parameters and the performance were calculated using the test dataset, to be more accurate and closer to the real performance for the algorithm. The XGBoost Regressor performance, after fine tuning process could be checked bellow.</p>
@@ -146,10 +144,7 @@ The fine tuning technique was made aiming to find the best parameters for XGB Re
 |:------------------------|:------------------------|:-----------------------|--------------------|
 | XGBoost Regressor       | 802.640                 | 0.125                  | 1125.825           |
 
-
-
-# 7. Business Outcome
-
+# 6. Business Outcome
 
 This project provides a solution that achieves a mean error of €802,64. What is an excellent result, once the value to be predicted are higher.
 
@@ -165,7 +160,7 @@ For a better understanding of store performance, we can examine the chart below.
 
 ![image](img/error_analysis.png)
 
-## 7.1 - Business Problem Solution
+## 6.1 - Business Problem Solution
 <p style="text-align: justify">According to the business problem which was to predict how much each store will sell over the next 6 weeks, the DataScience Team deployed the machine learning model into a cloud environment using flask framework and a render cloud platform and developed a Telegram Bot which can be accessed from computer or even a mobile phone.
 
 The user can simply send a text message to the Telegram bot, specifying the store number. The bot, will then provide a text message response indicating the projected sales for that particular store over the next 6 weeks.
@@ -182,7 +177,7 @@ To access the Telegram bot, you can either use the provided link or scan the QR 
 ![image](img/bot.png)
 
 
-# 8. Next Steps
+# 7. Next Steps
 
 As this was the first cycle, there are improvements to be considered in order to achieve the best performance.
 - Work on feature engineering, creating new features that could better explain the phenomenon.
@@ -191,7 +186,7 @@ As this was the first cycle, there are improvements to be considered in order to
 - New Telegram BOT where the user can access more information about the stores, sales, graphs.
 
 
-# 9. Technologies
+# 8. Technologies
 
 [![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)](https://www.python.org/)
 [![Jupyter Notebook](https://img.shields.io/badge/jupyter-%23FA0F00.svg?style=for-the-badge&logo=jupyter&logoColor=white)](https://jupyter.org/)
